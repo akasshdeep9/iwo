@@ -4,7 +4,7 @@
 #__________________________________________________________
 
 variable "tfc_organization" {
-  default     = "CiscoDevNet"
+  default     = "Netnology-MINT"
   description = "Terraform Cloud Organization."
   type        = string
 }
@@ -16,7 +16,7 @@ variable "tfc_organization" {
 #______________________________________________
 
 variable "tfc_workspace" {
-  default     = ""
+  default     = " terraform1"
   description = "Terraform Cloud Workspace Name."
   type        = string
 }
