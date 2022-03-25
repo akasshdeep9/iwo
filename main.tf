@@ -18,7 +18,7 @@ locals {
   cluster_name = data.terraform_remote_state.kubeconfig.outputs.cluster_name
   # Kubernetes Configuration File
   kubeconfig = yamldecode(data.terraform_remote_state.kubeconfig.outputs.kubeconfig)
-
+}
 #______________________________________________________________________
 #
 # Deploy the Intersight Workload Optimizer Pod using the Helm Provider
