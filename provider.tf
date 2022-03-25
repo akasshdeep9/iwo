@@ -5,10 +5,6 @@
 #_______________________________________________________________
 
 provider "helm" {
-  enable_tls = false
-  install_tiller  = true
-  service_account = "tiller"
-  
   kubernetes {
     host                   = local.kubeconfig.clusters[0].cluster.server
     client_certificate     = base64decode(local.kubeconfig.users[0].user.client-certificate-data)
