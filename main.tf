@@ -19,6 +19,9 @@ locals {
   # Kubernetes Configuration File
   kubeconfig = yamldecode(data.terraform_remote_state.kubeconfig.outputs.kubeconfig)
 }
+provider "helm" {
+  enable_tls = false
+}
 
 #______________________________________________________________________
 #
