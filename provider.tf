@@ -6,7 +6,7 @@
 
 provider "helm" {
   kubernetes {
-    config_paths = [ "/new_cluster-kubeconfig.yml"]
+    config_paths = [ "./new_cluster-kubeconfig.yml"]
     #host                   = local.kubeconfig.clusters[0].cluster.server
     #insecure               = false
     #client_certificate     = base64decode(local.kubeconfig.users[0].user.client-certificate-data)
