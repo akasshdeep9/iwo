@@ -18,10 +18,6 @@ locals {
   cluster_name = data.terraform_remote_state.kubeconfig.outputs.cluster_name
   # Kubernetes Configuration File
   kubeconfig = yamldecode(data.terraform_remote_state.kubeconfig.outputs.kubeconfig)
-}
-provider "helm" {
-  enable_tls = false
-}
 
 #______________________________________________________________________
 #
